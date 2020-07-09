@@ -134,44 +134,52 @@
 
         .wrapper {
             display: flex;
-            box-shadow: 4px 8px 50px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 15px 100px rgba(0, 0, 0, 0.1);
             width: 900px;
-            height: 350px;
+            height: 330px;
             border-radius: 20px;
             background-color: white;
 
             .title-image {
                 border-radius: 20px 0 0 20px;
-                width: 100%;
                 max-width: 350px;
-                object-fit: cover;
-                background-position-x: 20px;
-                background-size: cover;
+
             }
 
             .contents {
-                margin-left: 2em;
+                margin-left: 3em;
                 margin-bottom: 40px;
 
                 h1 {
-                    width: 500px;
-                    font-size: 25px;
+                    width: 450px;
+                    margin: 30px 0;
+                    font-size: 24px;
                     margin-bottom: -20px;
                 }
 
                 h2 {
-                    font-size: 18px;
+                    width: 450px;
+                    font-size: 17px;
                 }
 
                 .profile {
-                    margin: 40px 0;
+                    margin: 30px 0;
+
+                    img {
+                        width: 50px;
+                        height: 50px;
+                    }
+
+                    .bio {
+                        margin-top: 2px;
+                    }
                 }
             }
         }
     }
 
     .share-container {
-        top: 59%;
+        top: 58.5%;
         right: 30%;
     }
 
@@ -196,10 +204,15 @@
             .triangle {
                 position: absolute;
                 top: 5.5em;
+                right: 11.4em;
                 border-top: 20px solid hsl(217, 19%, 35%);
                 border-right: 20px solid transparent;
                 border-bottom: 20px solid transparent;
                 border-left: 20px solid transparent;
+            }
+
+            li {
+                cursor: pointer;
             }
 
             h1 {
